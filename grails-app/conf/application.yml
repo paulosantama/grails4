@@ -33,6 +33,9 @@ spring:
 management:
     endpoints:
         enabled-by-default: false
+    endpoint:
+        info:
+            enabled: true
 
 ---
 grails:
@@ -135,3 +138,6 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+server:
+  servlet:
+      context-path: /helloworld
